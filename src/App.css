@@ -1,7 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.section-hero{
+  padding-bottom: 6rem; /* space for the button above the SVG */
+  position: relative; /* ensure positioning context */
+
 }
 
 :root {
@@ -12,7 +22,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --buttonColor: #2a2c30;
+  --buttonColor: #302a2a;
   --secondaryColor: #4b4f56;
   --borderColor: #e3eaf0;
   --backgroundColor: #f7f7f7;
@@ -91,7 +101,7 @@ a:hover {
 
 /*! layout */
 .container {
-  max-width: 142rem;
+   max-width: 142rem;
   margin: 0 auto;
   padding: 9.6rem 2.4rem;
 }
@@ -134,7 +144,18 @@ a:hover {
   border: 0;
   padding: 1rem 2.8rem;
   background-color: var(--buttonColor);
-  color: #fff;
+  color: #ede4e4;
+  font-size: 1.6rem
+}
+
+.btns {
+  font-weight: 500;
+  font: inherit;
+  border-radius: 6px;
+  border: 0;
+  padding: 1rem 2.8rem;
+  background-color: var(--buttonColor);
+  color: #e4d8d8;
   font-size: 1.6rem
 }
 
@@ -144,6 +165,13 @@ a:hover {
 }
 
 .btn:hover {
+  box-shadow: inset 0 1px 4px #00000029, inset 0 0 0 3px #333;
+  background-color: var(--backgroundColor);
+  color: var(--buttonColor);
+  cursor: pointer
+}
+
+.btns:hover {
   box-shadow: inset 0 1px 4px #00000029, inset 0 0 0 3px #333;
   background-color: var(--backgroundColor);
   color: var(--buttonColor);
@@ -286,6 +314,11 @@ main {
       #606870);
 }
 
+.hero-btn {
+  position: relative;
+  z-index: 10; /* make sure it’s above the svg */
+}
+
 .custom-shape-divider-bottom-1696038172 {
   position: absolute;
   bottom: 0;
@@ -294,6 +327,7 @@ main {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+
 }
 
 .custom-shape-divider-bottom-1696038172 svg {
@@ -344,8 +378,8 @@ main .section-hero {
 }
 
 .section-hero img {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 60vh;
   /* transform: scaleX(-1); */
 }
 
@@ -569,6 +603,7 @@ textarea {
 }
 
 .contact_image {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   max-width: 100%;
   /* width: 30%; */
   height: auto;
@@ -619,11 +654,6 @@ textarea {
   padding: 1.4rem 2.4rem;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
-}
-
-.btn-submit {
-  font-size: 1.8rem;
-  border: none;
 }
 
 .contact-map {
@@ -851,6 +881,7 @@ footer {
   }
 
   .footer-container .content_1 {
+    /* width: 30%; */
     grid-column: 1 / -1;
     margin-bottom: 3.2rem;
   }

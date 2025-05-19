@@ -23,7 +23,7 @@ export const Contact = () => {
                 Get in touch with us. We are always here to help you.
             </p>
 
-            {/* <div className="section-contact"> */}
+            <div className="section-contact">
             <div className=" grid grid-two--cols">
                 <div className="contact-content">
                     <Form method="POST" action="/contact">
@@ -71,7 +71,7 @@ export const Contact = () => {
                         </div>
                     </Form>
                 </div>
-                {/* <div className="contact-image">
+                <div className="contact-image">
               <figure>
                 <img
                   src="/contact.png"
@@ -79,9 +79,9 @@ export const Contact = () => {
                   className="contact_image"
                 />
               </figure>
-            </div> */}
             </div>
-            {/* </div> */}
+            </div>
+            </div>
         </section>
     );
 };

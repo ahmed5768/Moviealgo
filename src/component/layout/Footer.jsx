@@ -4,15 +4,13 @@ export const Footer = () => {
       <footer className="section-footer">
         <div className="footer-container container">
           <div className="content_1">
-            <img src="./images/logo.png" alt="logo" />
             <p>
-              Welcome to Thapa EcomStore, your ultimate destination for
-              cutting-edge gadgets!
+             "Copyright © 2025. All rights reserved. All content on our website is for <br /> entertainment and informational purposes only."
             </p>
             <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
           </div>
           <div className="content_2">
-            <h4>SHOPPING</h4>
+            <h4>MOVIES</h4>
             <a href="#">Computer Store</a>
             <a href="#">Laptop Store</a>
             <a href="#">Accessories</a>
